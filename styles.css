@@ -1,0 +1,99 @@
+body{
+  position: relative;
+}
+
+.navbar {
+  font: 300 20px "Lato", "Opens sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#landing {
+  padding-top: 400px;
+  padding-bottom: 400px;
+  background-image: url("http://thesatyrmag.com/wp-content/uploads/2014/04/Coachella-Sunset-2012-Savvy-Spice-fashion-blog-.jpg");
+  background-size: cover;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bio {
+  font: 300 20px "Lato", "Opens sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#about {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  background-color: #222;
+  color: white;
+}
+
+.about-text {
+  margin: 0 40px 0 40px;
+  font: 300 20px "Lato", "Opens sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: justify;
+}
+
+.project {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  background-color: #666;
+  color: white;
+}
+
+.thumbnail {
+  margin: 0 40px 0 40px;
+}
+
+.project-text {
+  margin: 0 40px 0 40px;
+  padding: 0 40px 0 40px;
+  font: 300 20px "Lato", "Opens sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: justify;
+}
+
+.icon:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.contact {
+  padding: 300px 0 300px 0;
+  background-color: #999;
+  color: white;
+}
+
+.contact-text {
+  margin: 0 40px 0 40px;
+  font: 300 20px "Lato", "Opens sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.contact-list {
+  margin: 0 40px 0 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
