@@ -7,8 +7,8 @@ body{
 }
 
 #landing {
-  padding-top: 400px;
-  padding-bottom: 400px;
+  padding-top: 250px;
+  padding-bottom: 250px;
   background-image: url("http://thesatyrmag.com/wp-content/uploads/2014/04/Coachella-Sunset-2012-Savvy-Spice-fashion-blog-.jpg");
   background-size: cover;
   color: white;
@@ -20,61 +20,47 @@ body{
   font: 300 20px "Lato", "Opens sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-#about {
-  padding-top: 300px;
-  padding-bottom: 300px;
-  background-color: #222;
-  color: white;
-}
-
-.about-text {
-  margin: 0 40px 0 40px;
-  font: 300 20px "Lato", "Opens sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: justify;
-}
-
-.project {
-  padding-top: 300px;
-  padding-bottom: 300px;
-  background-color: #666;
-  color: white;
-}
-
-.thumbnail {
-  margin: 0 40px 0 40px;
-}
-
-.project-text {
-  margin: 0 40px 0 40px;
-  padding: 0 40px 0 40px;
-  font: 300 20px "Lato", "Opens sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: justify;
-}
-
-.icon:hover {
-  color: white;
-  cursor: pointer;
-}
-
-.contact {
-  padding: 300px 0 300px 0;
-  background-color: #999;
-  color: white;
-}
-
-.contact-text {
-  margin: 0 40px 0 40px;
-  font: 300 20px "Lato", "Opens sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-}
-
-.contact-list {
-  margin: 0 40px 0 40px;
-}
-
-
 .profile-picture {
   height: 200px;
   width: 200px;
   border-radius: 100px;
+  box-shadow: 0px 5px 5px #222;
+}
+
+.about-header, .projects-header, .contact-header {
+  font-size: 50px;
+  padding-bottom: 50px;
+  text-shadow: 0px 5px 5px #222;
+}
+
+.about-text, .project-text, .contact-text {
+  margin: 0 40px 0 40px;
+  font: 300 20px "Lato", "Opens sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: justify;
+}
+
+#about {
+  padding: 100px 0 200px 0;
+  background-color: #353C3E;
+  color: white;
+}
+
+.project {
+  padding: 100px 0 200px 0;
+  background-color: #4E4F4B;
+  color: white;
+}
+
+.thumbnail, .contact-list {
+  margin: 0 40px 0 40px;
+}
+
+.icon:hover {
+  color: white;
+}
+
+.contact {
+  padding: 100px 0 200px 0;
+  background-color: #090503;
+  color: white;
 }
