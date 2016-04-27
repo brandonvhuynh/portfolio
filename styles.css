@@ -50,6 +50,7 @@ body{
 
 .thumbnail, .contact-list {
   margin: 0 40px 0 40px;
+  box-shadow: 0px 5px 5px #222;
 }
 
 .icon:hover {
