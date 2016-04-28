@@ -2,6 +2,9 @@ body{
   position: relative;
 }
 
+h3 {
+  color: black;
+}
 .navbar, .bio {
   font: 300 20px "Lato", "Opens sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -51,6 +54,7 @@ body{
 .thumbnail, .contact-list {
   margin: 0 40px 0 40px;
 }
+
 
 .icon:hover {
   color: white;
