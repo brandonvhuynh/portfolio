@@ -1,0 +1,113 @@
+@media screen and (max-width: 1600px) {
+  .container {
+    max-width: 1250px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 950px;
+  }
+
+  .skillset-text {
+    li {
+      padding-right: 45px;
+    }
+    ul {  
+      margin-bottom: 0;
+      margin-top: 35px;
+    }
+  }
+
+  .skillset {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    max-width: 775px;
+  }
+
+  .landing-resume {
+    margin-top: 80px;
+  }
+
+  .landing-image {
+    margin-bottom: 80px;
+  }
+
+  .skillset-text li {
+    padding-right: 25px;
+  }
+  .project-column {
+    display: block; 
+  }
+  .project-block {
+    width: 100%;
+      &:nth-child(odd) {
+        border: none;
+      }
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 625px) {
+  .container {
+    max-width: 480px;
+  }
+  .about-header {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 375px;
+  }
+
+  .landing-image {
+    margin-bottom: 60px;
+  }
+
+  .skillset-text li {
+    padding-right: 15px;
+  }
+
+  .connect-logo {
+      ul {
+        display: block;
+      }
+      li {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+  }
+  .project-block h2 {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .container {
+    max-width: 300px;
+  }
+
+  .landing-header h1 {
+    margin: 10px 0;
+  }
+
+  .landing-image {
+    margin-bottom: 20px;
+      img {
+        height: 200px; 
+        width: 200px;
+
+      }
+  }
+  .landing-resume {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,42 @@
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+  color: blue;
+}
+
+li {
+  font-size: 22px;
+}
+
+h1, h2, h3, p, li {
+  font-family: "Lato", "Opens sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+  max-width: 1550px;
+  margin: 0 auto; 
+  padding: 0;
+}
+
+.landing-header, 
+.landing-image, 
+.landing-subheader, 
+.about-header {
+  text-align: center;
+}
