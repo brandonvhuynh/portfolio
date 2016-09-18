@@ -8,7 +8,8 @@
   margin: auto; }
   .navigation-content ul {
     margin: 0;
-    display: block; }
+    display: block;
+    padding: 0; }
   .navigation-content li {
     display: inline-block;
     padding: 10px 20px;
