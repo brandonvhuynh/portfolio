@@ -1,0 +1,87 @@
+// Site Set Up
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+a {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+//Atomic
+.flex {
+  display: flex;
+}
+.j-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.vh {
+  padding-top: calc(52vh - 160px);
+}
+
+.button {
+  border: 1px solid #33C3F0;
+  padding: 15px 60px;
+  margin-bottom: 30px;
+  background: #33C3F0;
+  border-radius: 3px;
+  @extend %ease-in-out;
+  @extend %white-text;
+    &:hover {
+      color: #33C3F0; 
+      background: #FEFDFB;
+      border: 1px solid #FEFDFB;
+    }
+}
+
+.landing {
+  height: 100vh;
+  width: 100%;
+}
+
+//Font Variables
+%white-text {
+  color: #FEFDFB;
+}
+
+%hover-color {
+  color: #33C3F0; 
+}
+
+%black-background {
+  background-color: #555;
+}
+%strait {
+  font-family: "Strait";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+%lato {
+  font-family: "Lato";
+  font-weight: 200;
+}
+
+//Transition Variable
+%ease-in-out {
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -ms-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}

@@ -1,0 +1,23 @@
+.about {
+  text-align: center;
+  background-image: url("http://i.imgur.com/ud5Wkri.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+    .about-header h1, .about-subheader p {
+      @extend %lato; 
+      @extend %white-text;
+    }
+    .about-header h1 {
+      margin-top: 0; 
+    }
+    .about-subheader p {
+      max-width: 80%; 
+      margin: 0 auto; 
+      background: rgba(85, 85, 85, 0.68);
+      border-radius: 2px;
+      padding: 20px 0;
+      width: 60%;
+      margin: 0 auto;
+    }
+}

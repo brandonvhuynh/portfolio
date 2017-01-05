@@ -1,0 +1,24 @@
+.navigation-cta {
+  max-width: 50%;
+  margin: 0 auto;
+    a {
+      @extend %white-text;
+      @extend %ease-in-out; 
+      @extend %lato; 
+      text-decoration: none;
+        &:hover {
+          color: #33C3F0;
+        }
+    }
+}
+
+.navigation {
+  @extend %black-background; 
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+    h1 {
+      margin: 0; 
+      padding: 5px 0;
+    }
+}

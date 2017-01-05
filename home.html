@@ -1,129 +1,215 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Brandon Huynh's Portfolio Site</title>
+  <title>Brandon's Portfolio Site</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400"/>
+  <link href="https://fonts.googleapis.com/css?family=Strait" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+  <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.19.0_643d6911392a3398cb1607993edabfa7_min.js"></script>
+  <script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+  <script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+  <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css"/>
 </head>
 <body>
-  <div class="container">
-    <nav class="navigation">
-      <div class="navigation-content">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#connect">Connect</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <div class="landing">
+  <div class="navigation">
     <div class="container">
-      <div class="landing-header">
-        <h1>Brandon Vien Huynh</h1>
-      </div>
-      <div class="landing-image">
-        <img src="http://i.imgur.com/WFdMfor.jpg" alt="Personal Image">
-      </div>
-      <div class="landing-subheader">
-        <h2>I am a front-end web developer at <a href="http://www.firetoss.com" alt="Firetoss">Firetoss</a>.</h2>
-      </div>
-      <div class="landing-subheader">
-        <h3>I am a Wordpress Custom Theme Developer.</h3>
-      </div>
-      <div class="landing-resume">
-        <h3><a href="https://docs.google.com/document/d/1l-J5UwCinhaFr-UCwfTxnXWt2HAduz9P6dzrHZy-E4s/edit" target="_blank">Resume</a></h3>
+      <div class="navigation-cta j-flex">
+        <h1><a href="#about">About</a></h1>
+        <h1><a href="#skills">Skills</a></h1>
+        <h1><a href="#projects">Projects</a></h1>
+        <h1><a href="#connect">Connect</a></h1>
       </div>
     </div>
   </div>
-  <div class="skillset">
-    <div class="container">
-      <div class="skillset-header">
-        <h1>Skill Set</h1>
-      </div>
-      <div class="skillset-text">
-        <ul>
-          <li>HTML</li><li>CSS</li><li>SASS</li><li>PHP</li><li>Wordpress</li><li>Ruby</li><li>Rails</li><li>JavaScript</li><li>React</li>
-        </ul>
+  <section class="landing intro">
+    <div class="intro-wrapper">
+      <div class="container flex">
+        <div class="name">
+          <h1>Brandon Vien Huynh</h1>
+        </div>
+        <div class="photo">
+          <img src="http://i.imgur.com/VlYoM9y.jpg">
+        </div>
+        <div class="statement">
+          <h2>I am a front-end web developer at <span><a href="www.firetoss.com">Firetoss</a></span></h2>
+        </div>
+        <div class="title">
+          <h3>I am Wordpress Custom Theme Developer</h3>
+        </div>
+        <div class="resume ">
+          <h3><a class="button" href="https://docs.google.com/document/d/1l-J5UwCinhaFr-UCwfTxnXWt2HAduz9P6dzrHZy-E4s/edit" target="_blank">Resume</a></h3>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="about" id="about">
+  </section> 
+  <section class="landing about" id="about">
     <div class="container">
       <div class="about-header">
-        <h1>About</h1>
+        <h1 class="vh">About</h1>
       </div>
       <div class="about-subheader">
         <p>I was born and raised in Salt Lake City, Utah. I have six years of sales-experience, four of which was at Nordstrom. I earned a double bachelors of science in political science and gender studies at the University of Utah in 2015. Currently I am a front-end web developer for Firetoss working with PHP and Wordpress. My bread and butter is HTML and CSS.</p>
       </div>
     </div>
-  </div>
-  <div class="projects" id="projects">
-    <dir class="container">
-      <h1>Projects</h1>
-      <div class="project-column">
-        <div class="project-block">
-          <img src="">
-            <a href="http://isotalent.com/">
-              <h2>IsoTalent</h2>
-            </a>
-          <h3>Senior level recruiting</h3>
-        </div>
-        <div class="project-block">
-          <img src="http://i.imgur.com/XrN62ZL.png">
-            <a href="http://belcher.herokuapp.com">
-              <h2>Belcher</h2>
-            </a>    
-          <h3>Tinder for food</h3>
-        </div>
-        <div class="project-block">
-          <img src="http://i.imgur.com/LfW0D6q.png">
-            <a href="http://www.nemsis.devft.com">
-              <h2>NEMSIS</h2>
-            </a>
-          <h3>National EMS Information System</h3>
-        </div>
-        <div class="project-block">
-          <img src="http://imgur.com/YQnAdGB.png">
-            <a href="http://kboil.devft.com">
-              <h2>KB Oil</h2>
-            </a>
-          <h3>Southern Utah oil delivery</h3>
-        </div>
-        <div class="project-block">
-          <img src="http://i.imgur.com/cnvY4BI.png">
-            <a href="http://www.kbx.devft.com">
-              <h2>KB Express</h2>
-            </a>
-          <h3>KB Oil's gas stations</h3>
-        </div>
-  
-      </div>
+  </section>
+  <section class="landing skills flex" id="skills">
+    <div class="skills-header">
+      <h1 class="vh">Skills</h1>
     </div>
-  </div>
-  <div class="connect" id="connect">
-    <div class="container">
-      <div class="connect-header">
-        <h1>Connect</h1>
-      </div>
-      <div class="connect-logo">
-        <ul>
-          <li>
-            <a href="http://www." target="_blank"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="http://www." target="_blank"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="http://www." target="_blank"><i class="fa fa-facebook-square fa-5x" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="http://www." target="_blank"><i class="fa fa-twitter fa-5x" aria-hidden="true"></i></a>
-          </li>
-        </ul>
-      </div>
+    <div class="skill">
+      <ul class="flex">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>SASS</li>
+        <li>PHP</li>
+        <li>Wordpress</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Ruby</li>
+        <li>Rails</li>
+      </ul>
     </div>
-  </div>
+  </section> 
+  <section class="landing projects" id="projects">
+    <h1 class="vh project-heading">Projects</h1>
+    <div class="project-wrapper flex" >
+      <a class="project-card" href="http://isotalent.com">
+        <div class="project-image">
+          <img src="http://i.imgur.com/owZTUF6.png">
+        </div>
+        <div class="project-textbox">
+          <div class="project-header">
+            <h1>IsoTalent</h1>
+          </div>
+          <div class="project-subheader">
+            <p>Executive and Senior level recuriting agency</p>
+          </div>
+        </div>
+      </a>
+      <a class="project-card" href="http://nemsis.devft.com">
+        <div class="project-image">
+          <img src="http://i.imgur.com/N5L5mnY.png">
+        </div>
+        <div class="project-textbox">
+          <div class="project-header">
+            <h1>NEMSIS</h1>
+          </div>
+          <div class="project-subheader">
+            <p>National Emergency Medical Service Information System</p>
+          </div>
+        </div>
+      </a>
+      <a class="project-card" href="http://kboil.net">
+        <div class="project-image">
+          <img src="http://i.imgur.com/dJFB306.png">
+        </div>
+        <div class="project-textbox">
+          <div class="project-header">
+            <h1>KB Oil</h1>
+          </div>
+          <div class="project-subheader">
+            <p>Southern Utah oil distributing company</p>
+          </div>
+        </div>
+      </a>
+      <a class="project-card" href="http://kbexpress.net">
+        <div class="project-image">
+          <img src="http://i.imgur.com/3eviMaG.png">
+        </div>
+        <div class="project-textbox">
+          <div class="project-header">
+            <h1>KB Express</h1>
+          </div>
+          <div class="project-subheader">
+            <p>KB Oil's gas station company</p>
+          </div>
+        </div>
+      </a>
+      <a class="project-card" href="https://belcher.herokuapp.com/">
+        <div class="project-image">
+          <img src="http://i.imgur.com/lMFgnvs.png">
+        </div>
+        <div class="project-textbox">
+          <div class="project-header">
+            <h1>Belcher</h1>
+          </div>
+          <div class="project-subheader">
+            <p>Tinder for food</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+  <section class="landing connect" id="connect">
+    <h1 class="vh connect-heading">Connect</h1>
+    <ul class="connect-flex flex">
+      <li>
+        <a href="mailto:brandonvhuynh@gmail.com?Subject=Hello" target="_top"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/brandonvhuynh
+" target="_blank"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/brandon.v.huynh.7" target="_blank"><i class="fa fa-facebook-square fa-5x" aria-hidden="true"></i></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/brandonvhuynh/?hl=en" target="_blank"><i class="fa fa-instagram fa-5x" aria-hidden="true"></i>
+</a>
+      </li>
+    </ul>
+  </section>
 </body>
 </html>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script>
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+</script>
+<script>
+  $(document).ready(function(){
+    $(".project-wrapper").slick({
+      centerMode: true, 
+      centerPadding: '60px',
+      slidesToShow: 3,
+      arrows: true, 
+      autoplay: true, 
+      autoplaySpeed: 2000,
+    });
+  });
+</script>
+<script>
+  window.sr = ScrollReveal().reveal('.navigation', '.photo', '.about-header')
+</script>
+<script>
+  $(function () { 
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        triggerHook: 'onLeave'
+      }
+    });
+    var slides = document.querySelectorAll("section.landing");
+    for (var i=0; i<slides.length; i++) {
+      new ScrollMagic.Scene({
+          triggerElement: slides[i]
+      })
+      .setPin(slides[i])
+      .addTo(controller);
+    }
+  });
+</script>

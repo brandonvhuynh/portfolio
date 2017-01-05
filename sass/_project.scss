@@ -1,0 +1,67 @@
+.projects {
+  background-image: url('http://i.imgur.com/KUm30Qp.jpg');
+  background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    h1.project-heading {
+      @extend %lato;
+      @extend %white-text;
+      margin-top: 0; 
+      text-align: center;
+    }
+    .project-wrapper {
+      @extend %lato;
+      @extend %white-text; 
+        .project-image img {
+          width: 200px;
+          border-radius: 3px;
+        }
+        .project-header h1 a {
+          @extend %lato;
+          @extend %white-text; 
+        }
+    }
+    .project-card {
+      border: 2px solid #888;
+      margin: 0 10px;
+      background: #555;
+      border-radius: 3px;
+        * {
+          @extend %white-text;
+          text-align: center; 
+        }
+        .project-textbox {
+            .project-header {
+                h1 {
+                  @extend %lato; 
+                  font-size: 18px;
+                }
+            }
+            .project-subheader {
+                p {
+                  font-size: 14px; 
+                }
+            }
+        }
+        .project-image {
+          position: relative;
+          padding-top: 55%;
+          overflow: hidden;
+            img {
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              margin: 0 auto;
+              min-height: 100%;
+              min-width: 100%;
+            }
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,62 @@
+.photo img {
+  border-radius: 50%;
+  width: 300px;
+}
+
+.landing.intro {
+  position: relative;
+  background-image: url("http://i.imgur.com/IQDw9jB.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    &:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: rgba(100, 100, 100, 0.45);
+    }
+    .flex {
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0;
+        h1, h2, h3 {
+          @extend %white-text;
+          @extend %lato;
+          @extend %ease-in-out;
+          text-align: center;
+        }
+        h2, h3 {
+          margin: 15px 0; 
+        }
+        .resume {
+          margin-top: 15px; 
+        }
+        .statement span a {
+          @extend %hover-color;
+          @extend %ease-in-out;
+          @extend %strait;
+          font-size: 1em; 
+          position: relative;
+            &:hover {
+                &:after {
+                  width: 100%; 
+                }
+            }
+            &:after {
+              background: #fff;
+              height: 1px;
+              position: absolute;
+              content: '';
+              left: 0;
+              bottom: 0;
+              width: 0;
+              transition: all 0.4s ease-in-out;
+              margin: auto;
+            }
+        }
+        * {
+          z-index: 1;
+        }
+    }
+}
