@@ -6,25 +6,24 @@
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400"/>
   <link href="https://fonts.googleapis.com/css?family=Strait" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css"/>
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
   <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.19.0_643d6911392a3398cb1607993edabfa7_min.js"></script>
   <script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
   <script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
   <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css"/>
 </head>
 <body>
   <div class="navigation">
-    <div class="container">
       <div class="navigation-cta j-flex">
         <h1><a href="#about">About</a></h1>
         <h1><a href="#skills">Skills</a></h1>
         <h1><a href="#projects">Projects</a></h1>
         <h1><a href="#connect">Connect</a></h1>
       </div>
-    </div>
   </div>
   <section class="landing intro">
     <div class="intro-wrapper">
@@ -166,7 +165,7 @@
   </section>
 </body>
 </html>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<!-- Smooth Scroll -->
 <script>
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -181,6 +180,9 @@
     }
   });
 </script>
+
+
+<!-- Slick -->
 <script>
   $(document).ready(function(){
     $(".project-wrapper").slick({
@@ -190,9 +192,26 @@
       arrows: true, 
       autoplay: true, 
       autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     });
   });
 </script>
+
+
+<!-- Reveal -->
 <script>
   window.sr = ScrollReveal().reveal('.navigation', '.photo', '.about-header')
 </script>

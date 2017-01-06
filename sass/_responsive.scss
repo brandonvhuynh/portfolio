@@ -1,0 +1,56 @@
+@media screen and (max-width: 980px) {
+  //Project
+  .projects .project-card .project-image {
+    padding-top: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  //Navigation
+  .navigation-cta {
+    max-width: 70%
+  }
+  //Skill
+  .skill .flex {
+    flex-direction: column;
+    text-align: center;
+    padding: 5px 30px;
+      li {
+        margin: 5px 0;
+      }
+  }
+}
+@media screen and (max-width: 500px) {
+  //About 
+  .about-header .vh {
+    padding-top: calc(46vh - 160px);
+  }
+  .about .about-subheader p {
+    width: 70%;
+    padding: 20px 40px;
+  }
+  //Skill 
+  .skills-header .vh {
+    padding-top: calc(40vh - 160px);
+  }
+  //Project
+  .projects .project-card .project-image {
+    padding-top: 80%;
+  }
+  //Connect
+  .vh.connect-heading {
+    padding-top: calc(38vh - 160px)
+  }
+  .connect .connect-flex {
+    flex-direction: column;
+      li {
+        margin: 10px 0;
+      }
+  }
+}
+@media screen and (max-width: 300px) {
+  //Navigation
+  .navigation-cta {
+    max-width: 95%
+  }
+}
