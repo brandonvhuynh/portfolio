@@ -1,4 +1,8 @@
 @media screen and (max-width: 980px) {
+  //Toolkit
+  .container {
+    max-width: 768px
+  }
   //Project
   .projects .project-card .project-image {
     padding-top: 40%;
@@ -6,6 +10,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  //Toolkit
+  .container {
+    max-width: 500px;
+  }
   //Navigation
   .navigation-cta {
     max-width: 70%
@@ -21,6 +29,13 @@
   }
 }
 @media screen and (max-width: 500px) {
+  //Toolkit 
+  html {
+    font-size: 30px;
+  }
+  .container {
+    max-width: 400px;
+  }
   //About 
   .about-header .vh {
     padding-top: calc(46vh - 160px);
@@ -49,6 +64,10 @@
   }
 }
 @media screen and (max-width: 300px) {
+  //Toolkit
+  .container {
+    max-width: 290px; 
+  }
   //Navigation
   .navigation-cta {
     max-width: 95%
