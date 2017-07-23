@@ -301,19 +301,19 @@
   window.sr = ScrollReveal().reveal('.navigation', '.photo', '.about-header')
 </script>
 <script>
-  $(function () { 
-    var controller = new ScrollMagic.Controller({
-      globalSceneOptions: {
-        triggerHook: 'onLeave'
-      }
-    });
-    var slides = document.querySelectorAll("section.landing");
-    for (var i=0; i<slides.length; i++) {
-      new ScrollMagic.Scene({
-          triggerElement: slides[i]
-      })
-      .setPin(slides[i])
-      .addTo(controller);
-    }
-  });
+  // $(function () { 
+  //   var controller = new ScrollMagic.Controller({
+  //     globalSceneOptions: {
+  //       triggerHook: 'onLeave'
+  //     }
+  //   });
+  //   var slides = document.querySelectorAll("section.landing");
+  //   for (var i=0; i<slides.length; i++) {
+  //     new ScrollMagic.Scene({
+  //         triggerElement: slides[i]
+  //     })
+  //     .setPin(slides[i])
+  //     .addTo(controller);
+  //   }
+  // });
 </script>
