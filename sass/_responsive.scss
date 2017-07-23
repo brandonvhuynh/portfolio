@@ -3,9 +3,21 @@
   .container {
     max-width: 768px
   }
+  .skills .vh {
+    padding-top: calc(35vh - 160px);
+  }
   //Project
   .projects .project-card .project-image {
     padding-top: 40%;
+  }
+  //Skill
+  .skill .flex {
+    flex-direction: column;
+    text-align: center;
+    padding: 5px 30px;
+      li {
+        margin: 5px 0;
+      }
   }
 }
 
@@ -17,15 +29,6 @@
   //Navigation
   .navigation-cta {
     max-width: 70%
-  }
-  //Skill
-  .skill .flex {
-    flex-direction: column;
-    text-align: center;
-    padding: 5px 30px;
-      li {
-        margin: 5px 0;
-      }
   }
 }
 @media screen and (max-width: 500px) {
@@ -45,12 +48,15 @@
     padding: 20px 40px;
   }
   //Skill 
-  .skills-header .vh {
-    padding-top: calc(40vh - 160px);
+  .skills .vh {
+    padding-top: calc(30vh - 160px);
   }
   //Project
+  .projects .vh {
+    padding-top: calc(40vh - 160px);
+  }
   .projects .project-card .project-image {
-    padding-top: 80%;
+    padding-top: 60%;
   }
   //Connect
   .vh.connect-heading {
@@ -71,5 +77,8 @@
   //Navigation
   .navigation-cta {
     max-width: 95%
+  }
+  .title {
+    display: none;
   }
 }

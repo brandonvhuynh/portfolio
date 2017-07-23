@@ -62,6 +62,29 @@
     }
 }
 
+.slick-prev:before, .slick-next:before {
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  content: '' !important;
+  display: inline-block;
+  height: 30px;
+  left: 0.15em;
+  position: relative;
+  top: 0.15em;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 30px;
+}
+
+.slick-prev:before {
+  transform: rotate(-135deg);
+  left: -10px;
+}
+
+.slick-next:before {
+  transform: rotate(45deg);
+}
+
 
 
 
