@@ -18,6 +18,15 @@
       li {
         margin: 5px 0;
       }
+    }
+  .name {
+    margin-top: 200px;
+  }
+
+  .about .about-subheader p {
+    width: 100%;
+    padding: 30px;
+    line-height: 2;
   }
 }
 
@@ -39,6 +48,7 @@
   .container {
     max-width: 400px;
   }
+
   //About 
   .about-header .vh {
     padding-top: calc(46vh - 160px);
