@@ -6,6 +6,12 @@
   background-repeat: no-repeat; }
   .about .about-header h1 {
     margin-top: 0; }
+    @media screen and (max-width: 500px) {
+      .about .about-header h1 {
+        padding-top: 100px; } }
+  @media screen and (max-width: 500px) {
+    .about .about-subheader {
+      padding-bottom: 100px; } }
   .about .about-subheader p {
     max-width: 80%;
     margin: 0 auto;
@@ -13,7 +19,11 @@
     border-radius: 2px;
     padding: 20px 0;
     width: 60%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    line-height: 2; }
+    @media screen and (max-width: 1200px) {
+      .about .about-subheader p {
+        padding: 20px 20px; } }
 
 .connect {
   background-image: url("http://i.imgur.com/hfdtaRR.jpg");
@@ -44,6 +54,9 @@
 .photo img {
   border-radius: 50%;
   width: 300px; }
+  @media screen and (max-width: 768px) {
+    .photo img {
+      width: 250px; } }
 
 .title h3 {
   line-height: 2; }
@@ -60,6 +73,11 @@
     height: 100%;
     width: 100%;
     background: rgba(100, 100, 100, 0.45); }
+  .landing.intro .intro-wrapper {
+    padding-top: 50px; }
+    @media screen and (max-width: 1200px) {
+      .landing.intro .intro-wrapper {
+        padding-top: 30px; } }
   .landing.intro .flex {
     flex-direction: column;
     align-items: center;
@@ -168,6 +186,9 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
+  @media screen and (max-width: 500px) {
+    .landing.skills {
+      padding-bottom: 100px; } }
 
 .skill {
   max-width: 100%;
@@ -178,10 +199,32 @@
     max-width: 100%;
     margin: 0;
     padding: 0; }
+    @media screen and (max-width: 1200px) {
+      .skill ul {
+        display: grid;
+        grid-template-columns: calc(100% / 2) calc(100% / 2);
+        min-width: 500px; } }
+    @media screen and (max-width: 500px) {
+      .skill ul {
+        min-width: 350px; } }
+    @media screen and (max-width: 300px) {
+      .skill ul {
+        min-width: 210px; } }
     .skill ul li {
       list-style: none;
       padding: 0 20px; }
+      @media screen and (max-width: 1200px) {
+        .skill ul li {
+          padding: 20px 20px;
+          text-align: center; } }
+      @media screen and (max-width: 300px) {
+        .skill ul li {
+          padding: 20px 0;
+          font-size: 18px; } }
 
+@media screen and (max-width: 1200px) {
+  .skills-header .vh {
+    padding-top: calc(52vh - 350px); } }
 html {
   font-size: 18px; }
 
@@ -211,7 +254,7 @@ a {
   margin: 0 auto; }
 
 .vh {
-  padding-top: calc(52vh - 160px); }
+  padding-top: calc(52vh - 240px); }
 
 .button {
   border: 1px solid #33C3F0;
@@ -259,7 +302,7 @@ a {
     max-width: 768px; }
 
   .skills .vh {
-    padding-top: calc(35vh - 160px); }
+    padding-top: calc(35vh - 240px); }
 
   .projects .project-card .project-image {
     padding-top: 40%; }
@@ -272,7 +315,7 @@ a {
       margin: 5px 0; }
 
   .name {
-    margin-top: 200px; }
+    margin-top: -20px; }
 
   .about .about-subheader p {
     width: 100%;
@@ -300,24 +343,28 @@ a {
     padding: 5px;
     padding-top: 0; }
 
+  .landing {
+    height: 100%;
+    min-height: 90vh; }
+
   .about-header .vh {
-    padding-top: calc(46vh - 160px); }
+    padding-top: calc(46vh - 380px); }
 
   .about .about-subheader p {
     width: 70%;
     padding: 20px 40px; }
 
   .skills .vh {
-    padding-top: calc(30vh - 160px); }
+    padding-top: calc(30vh - 220px); }
 
   .projects .vh {
-    padding-top: calc(40vh - 160px); }
+    padding-top: calc(40vh - 200px); }
 
   .projects .project-card .project-image {
     padding-top: 60%; }
 
   .vh.connect-heading {
-    padding-top: calc(38vh - 160px); }
+    padding-top: calc(38vh - 280px); }
 
   .connect .connect-flex {
     flex-direction: column; }
